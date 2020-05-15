@@ -1,0 +1,4 @@
+ANACONDA_HOME=~/tools/anaconda2
+
+export PATH=$PATH:$ANACONDA_HOME/bin
+export AIRFLOW_HOME=~/tools/airflow

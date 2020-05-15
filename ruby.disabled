@@ -1,0 +1,22 @@
+# Garbage collector settingsfor 2.1.2
+#export RUBY_GC_HEAP_INIT_SLOTS=600000
+#export RUBY_GC_HEAP_FREE_SLOTS=600000
+#export RUBY_GC_HEAP_GROWTH_FACTOR=1.25
+#export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
+#export RUBY_GC_MALLOC_LIMIT=64000000
+#export RUBY_GC_OLDMALLOC_LIMIT=64000000
+
+# Ack ignore gems
+#export ACK_OPTIONS=--ignore-dir=.bundle
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+
+# Warn when using gem as root
+alias sudo="sudo ";
+alias be='bundle exec'
+alias gem='ruby -e "raise \"SUDO GEM DETECTED. Unalias gem at your own risk\" if ENV[\"USER\"] == \"root\"" && gem';
+
+# rbenv support
+eval "$(rbenv init -)"
+

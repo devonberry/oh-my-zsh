@@ -1,0 +1,3 @@
+alias kafka-start='zkserver start; kafka-server-start /usr/local/etc/kafka/server.properties'
+alias kafka-stop='kafka-server-stop; zkserver stop'
+

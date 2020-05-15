@@ -1,0 +1,11 @@
+# Add kubeadm utilities to path
+export PATH="$HOME/.kubeadm-dind-cluster:$PATH"
+
+# manage kubernetes docker-in-docker
+dind() {
+    PWD=`pwd`
+    cd $DEV_DIR/kubernetes/kubernetes
+    $DEV_DIR/kubernetes-sigs/kubeadm-dind-cluster/fixed/dind-cluster-v1.10.sh $1
+    cd $PWD
+}
+
