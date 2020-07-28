@@ -1,8 +1,8 @@
 # Try to autocorrect typos
 ENABLE_CORRECTION=true
 
-############ PowerLevel9k theme ################################################################################
-ZSH_THEME="powerlevel9k/powerlevel9k"
+############ PowerLevel10k theme ################################################################################
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir battery vcs custom_prompt)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
